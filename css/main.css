@@ -1,0 +1,86 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  background-color: #454444;
+  padding: 1.5rem;
+}
+
+#header h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-left: 3rem;
+}
+
+#content {
+  margin: 2.5rem 0;
+}
+
+#content h1 {
+  text-align: center;
+  font-weight: lighter;
+  display: block;
+}
+
+#content #cards {
+  display: flex;
+  margin-top: 3rem;
+}
+
+#content #cards article {
+  margin: 0 0.5rem;
+  background-color: #ddeae1;
+  padding: 1.5rem;
+}
+
+#content #cards article:hover {
+  border-radius: 1rem;
+  box-shadow: 10px 10px 2rem rgba(0, 0, 0, 0.2);
+}
+
+#content #cards article h2 {
+  text-align: center;
+}
+
+#content #cards article p {
+  font-size: 1.3rem;
+}
+
+#content #cards article img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #content #cards {
+    flex-wrap: wrap;
+  }
+  #content #cards article {
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #content #cards {
+    flex-wrap: wrap;
+  }
+  #content #cards article {
+    margin: 1rem 0;
+  }
+}
